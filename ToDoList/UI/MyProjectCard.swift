@@ -72,6 +72,8 @@ struct MyProjectCard: View {
 
 struct MyProjectCard_Previews: PreviewProvider {
     static var previews: some View {
-        MyProjectCard()
+        Group {
+            MyProjectCard()
+        }
     }
 }
