@@ -28,8 +28,18 @@ struct ContentView: View {
                         
                         Spacer()
                         
-                        Image(systemName: "person.crop.circle.fill")
-                            .font(.largeTitle)
+                        NavigationLink(destination: AddList()){
+                            Circle()
+                                .foregroundColor(Color.yellow)
+                                .frame(width: 40, height: 40)
+                                .overlay(
+                                    Image(systemName: "plus")
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 23))
+                                )
+                        }
+                        
+                        
                     }
                     .padding(15)
                     
@@ -43,7 +53,13 @@ struct ContentView: View {
                         VStack{
                             MyProjectCard()
                             
-                            MyBasicCard()
+                            MyCard(
+                                icon: "flag.fill",
+                                title: "5km 걷기",
+                                start: "7 PM",
+                                end: "8 PM",
+                                bgColor: Color.purple
+                            )
                             MyCard(
                                 icon: "tray.fill",
                                 title: "책상 정리하기",
@@ -78,16 +94,7 @@ struct ContentView: View {
                     }
                 }
                 
-                Circle()
-                    .foregroundColor(Color.yellow)
-                    .frame(width: 60, height: 60)
-                    .overlay(
-                        Image(systemName: "plus")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 30))
-                    )
-                    .padding(10)
-                    .shadow(radius: 20)
+                
             } // ZStack
             .navigationTitle("뒤로가기")
             .navigationBarHidden(self.isNavigationBarHidden)

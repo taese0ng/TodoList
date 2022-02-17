@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0BE96A27BE995A00E3D2EC /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0BE96927BE995A00E3D2EC /* CheckboxToggleStyle.swift */; };
+		0D0BE96D27BE9DDD00E3D2EC /* AddList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0BE96C27BE9DDC00E3D2EC /* AddList.swift */; };
 		0DBBBC3B27B2C59400A347CD /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBBC3A27B2C59300A347CD /* MyCard.swift */; };
 		0DDD2D2A27B4143700019CD8 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDD2D2927B4143700019CD8 /* MyList.swift */; };
 		0DDF2D3327B167D100B9E1C6 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF2D3227B167D100B9E1C6 /* ToDoListApp.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0BE96927BE995A00E3D2EC /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		0D0BE96C27BE9DDC00E3D2EC /* AddList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddList.swift; sourceTree = "<group>"; };
 		0DBBBC3A27B2C59300A347CD /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 		0DDD2D2927B4143700019CD8 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 		0DDF2D2F27B167D100B9E1C6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0BE96B27BE9DC200E3D2EC /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				0DDD2D2927B4143700019CD8 /* MyList.swift */,
+				0D0BE96C27BE9DDC00E3D2EC /* AddList.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		0DDF2D2627B167D100B9E1C6 = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +152,11 @@
 		0DDF2D5D27B1681900B9E1C6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0D0BE96B27BE9DC200E3D2EC /* Pages */,
 				0DDF2D5E27B16A2500B9E1C6 /* MyProjectCard.swift */,
 				0DDF2D6027B16D9D00B9E1C6 /* MyBasicCard.swift */,
 				0DBBBC3A27B2C59300A347CD /* MyCard.swift */,
-				0DDD2D2927B4143700019CD8 /* MyList.swift */,
+				0D0BE96927BE995A00E3D2EC /* CheckboxToggleStyle.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -282,7 +296,9 @@
 				0DDF2D6127B16D9D00B9E1C6 /* MyBasicCard.swift in Sources */,
 				0DBBBC3B27B2C59400A347CD /* MyCard.swift in Sources */,
 				0DDF2D3327B167D100B9E1C6 /* ToDoListApp.swift in Sources */,
+				0D0BE96D27BE9DDD00E3D2EC /* AddList.swift in Sources */,
 				0DDD2D2A27B4143700019CD8 /* MyList.swift in Sources */,
+				0D0BE96A27BE995A00E3D2EC /* CheckboxToggleStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

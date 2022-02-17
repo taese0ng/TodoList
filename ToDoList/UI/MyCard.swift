@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MyCard: View {
     
+    @State private var isChecked: Bool = false
+    
     var icon: String
     var title: String
     var start: String
@@ -36,6 +38,10 @@ struct MyCard: View {
                 Text("\(start) - \(end)")
                     .foregroundColor(Color.white)
             }
+            
+            Toggle("", isOn: $isChecked)
+                .toggleStyle(CheckboxToggleStyle(style: .circle))
+                .foregroundColor(.white)
         }
         .padding(20)
         .background(bgColor)
